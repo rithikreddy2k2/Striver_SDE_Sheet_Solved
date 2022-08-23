@@ -2,14 +2,15 @@
 
 SNo | Name | Logic Used | Link |
 ----|------|------------|------|
-1 | DNF Sort | 3 pointer partitioning | [view](DNF_sort.cpp)
-2 | Finding Missing and Repeating | repeating xor {1 to n} | [view](missing_repeating.cpp)
-3 | Kadane's Algorithm | Max Subarray Sum | [view](kadanes_algorithm.cpp)
-4 | Duplicate Number | Cycle Detection Linked List {index -> element} | [view](duplicate_number.cpp)
-5 | Merge Intervals | sort, condition of merging | [view](merge_intervals.cpp)
-6 | Merge Sorted Space in O(1) Space | Gap Method: Shear Sort | [view](merge_sorted_arrays.cpp)
+1 | [Sort Color](https://leetcode.com/problems/sort-colors/) (DNF (Dutch National Flag) Algo) | 3 pointer partitioning | [Solution](DNF_sort.cpp)
+2 | Finding Missing and Repeating | repeating xor {1 to n} | [Solution](missing_repeating.cpp)
+3 | Kadane's Algorithm | Max Subarray Sum | [Solution](kadanes_algorithm.cpp)
+4 | [Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | Cycle Detection Linked List {index -> element} | [Solution](duplicate_number.cpp)
+5 | Merge Intervals | sort, condition of merging | [Solution](merge_intervals.cpp)
+6 | Merge Sorted Space in O(1) Space | Gap Method: Shear Sort | [Solution](merge_sorted_arrays.cpp)
 
-### Q-4) [Duplicate Number](duplicate_number.cpp):
+### Q-4)[Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) : [Solution](duplicate_number.cpp)
+#### LOGIC:
 If there is no duplicate in the array, we can map each indexes to each numbers in this array. In other words, we can have a mapping function f(index) = number
 For example, let's assume
 nums = [2,1,3], then the mapping function is 0->2, 1->1, 2->3.
