@@ -9,7 +9,7 @@ SNo | Name | Logic Used | Link |
 5 | Merge Intervals | sort, condition of merging | [view](merge_intervals.cpp)
 6 | Merge Sorted Space in O(1) Space | Gap Method: Shear Sort | [view](merge_sorted_arrays.cpp)
 
-### Q-4) [Duplicate Number] (duplicate_number.cpp):
+### Q-4) [Duplicate Number](duplicate_number.cpp):
 If there is no duplicate in the array, we can map each indexes to each numbers in this array. In other words, we can have a mapping function f(index) = number
 For example, let's assume
 nums = [2,1,3], then the mapping function is 0->2, 1->1, 2->3.
