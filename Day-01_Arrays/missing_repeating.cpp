@@ -4,7 +4,7 @@
 
 #include <bits/stdc++.h>
 using namespace std;
-
+// Solution-1 (Using XOR (BIT MANIPULATION))
 class Solution{
 public:
     int *findTwoElement(int *arr, int n) {
@@ -51,6 +51,34 @@ public:
     }
 };
 
+// Solution-2 (PLAYING WITH INDICES)
+class Solution{
+public:
+    int *findTwoElement(int *a, int n) {
+        // code here
+        int *ans = new int[2]{-1};
+        int val=0,ele=0;
+        
+        for(int i=0;i<n;i++){
+            val = abs(a[i]);
+            ele = a[val-1];
+            
+            if(ele > 0)
+                a[val-1] = -ele;
+            
+            else
+                ans[0]=val;
+        }
+        
+        for(int i=0;i<n;i++){
+            if(a[i]>0){
+                ans[1]=i+1;
+                break;
+            }
+        }
+        return ans;
+    }
+};
 
 int main() {
     int t;
