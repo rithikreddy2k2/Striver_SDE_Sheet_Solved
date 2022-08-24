@@ -30,9 +30,9 @@ According to Floyd's algorithm, first step, if a cycle does exist, and you advan
 
 *Second step, take tortoise or hare to the start point of the list (i.e. let one of the animal be 0) and keep the other one staying at the meeting point. Now, advance both of the animals one node each unit of time, the meeting point is the starting point of the cycle. This is what the second while loop does. The second while loop finds their meeting point.
 
-*Proof of second step:
 ![image](https://user-images.githubusercontent.com/66252916/186201130-8377919b-1f54-4666-a2e8-9a0f2e2965f5.png)
 
+*Proof of second step:
 Distance traveled by tortoise while meeting = x + y
 
 Distance traveled by hare while meeting = (x + y + z) + y = x + 2y + z
