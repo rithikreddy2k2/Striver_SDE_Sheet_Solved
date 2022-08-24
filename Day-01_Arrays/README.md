@@ -8,7 +8,7 @@ SNo | Name | Logic Used | Link |
 4 | [Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | Cycle Detection Linked List {index -> element} | [Solution](duplicate_number.cpp)
 5 | Merge Intervals | sort, condition of merging | [Solution](merge_intervals.cpp)
 6 | Merge Sorted Space in O(1) Space | Gap Method: Shear Sort | [Solution](merge_sorted_arrays.cpp)
-### Q-2) [Find Missing and Repeating](https://practice.geeksforgeeks.org/problems/find-missing-and-repeating2512/1) : [Soltuion]
+### Q-2) [Find Missing and Repeating](https://practice.geeksforgeeks.org/problems/find-missing-and-repeating2512/1) : [Solution](missing_repeating.cpp)
 ### Q-4)[Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) : [Solution](duplicate_number.cpp)
 #### LOGIC:
 If there is no duplicate in the array, we can map each indexes to each numbers in this array. In other words, we can have a mapping function f(index) = number
