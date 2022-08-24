@@ -10,7 +10,7 @@ SNo | Name | Logic Used | Link |
 6 | Merge Sorted Space in O(1) Space | Gap Method: Shear Sort | [Solution](merge_sorted_arrays.cpp)
 ### Q-2) [Find Missing and Repeating](https://practice.geeksforgeeks.org/problems/find-missing-and-repeating2512/1) : [Solution](missing_repeating.cpp)
 #### Solution-1: Playing with Indices:
-Loop through the Array and whenever a value (i.e., abs(Arr[i])) at particular index is seen, make Arr[val-1] as negative if positive, else if already negative, its the repeated number (as it's already negative indicates, it has been seen prior), so store it, and for Missing Number, loop through all Indices of Array again and If Arr[I] is Positive, then I+1 is the Missing number, as had it been in Array, it's corresponding index value would've been negative, Hence Finally return these 2.
+Loop through the Array and whenever a value (i.e., abs(Arr[i])) at particular index is seen, make Arr[val-1] as negative (we are marking element at (val-1)th index as negative to indicate that val is present in the Array) if positive, else if already negative, its the repeated number (as it has been marked prior, indicates it has repeated), so store it, and for Missing Number, loop through all Indices of Array again and If Arr[I] is Positive, then I+1 is the Missing number, as had it been in Array, it's corresponding index value would've been negative, Hence Finally return these 2.
 ### Solution-2: XOR Logic:
 
 ### Q-4)[Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) : [Solution](duplicate_number.cpp)
