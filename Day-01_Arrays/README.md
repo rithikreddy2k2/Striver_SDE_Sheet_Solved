@@ -46,4 +46,5 @@ Hence by moving tortoise to start of linked list, and making both animals to mov
 They will reach at the point where the loop starts in the linked list
 
 ### Q-5) [Merge Intervals](https://leetcode.com/problems/merge-intervals/) : [Solution](merge_intervals.cpp)
-
+#### LOGIC:
+Initially Sort the Intervals Array, so that Initially we can Push the Intervals Directly. Then if Curr_Interval[0] <= Ans.back()[1], Indicates the Range of Previous Interval can be Updated, Now it Depends on 2nd Value (i.e., Max (Ans.back()[1],Curr_Interval[1] is Taken), As current Interval Can be Completely Inside (Say Ans had [1,6], now Curr_Interval is [3,5], so as it lies inside it, hence Ans.back()[1] remains the Same, as it has Max value, So Range is still [1,6]) or Partially Inside (ay Ans had [1,6], now Curr_Interval is [5,8], so as it lies inside it, hence Ans.back()[1] would be updated with Curr_Interval[1], Hence Range would be updated to [1,8]), Else if Curr_Interval[0] > Ans.back()[1], then Curr_Interval has to be Pushed (Say [1,6] is ans.back(), and Curr_Interval is [7,9], then its Pushed back to the Ans) and Finally Return Ans.
