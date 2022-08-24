@@ -6,7 +6,7 @@ SNo | Name | Logic Used | Link |
 2 | [Finding Missing and Repeating](https://practice.geeksforgeeks.org/problems/find-missing-and-repeating2512/1) | repeating xor {1 to n} or Playing with Indices| [Solution](missing_repeating.cpp)
 3 | [Kadane's Algorithm](https://leetcode.com/problems/maximum-subarray/) : [EXPLANATION](https://leetcode.com/problems/maximum-subarray/discuss/1595195/C%2B%2BPython-7-Simple-Solutions-w-Explanation-or-Brute-Force-%2B-DP-%2B-Kadane-%2B-Divide-and-Conquer) | Max Subarray Sum | [Solution](kadanes_algorithm.cpp)
 4 | [Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | Cycle Detection Linked List {index -> element} | [Solution](duplicate_number.cpp)
-5 | Merge Intervals | sort, condition of merging | [Solution](merge_intervals.cpp)
+5 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | sort, condition of merging | [Solution](merge_intervals.cpp)
 6 | Merge Sorted Space in O(1) Space | Gap Method: Shear Sort | [Solution](merge_sorted_arrays.cpp)
 ### Q-2) [Find Missing and Repeating](https://practice.geeksforgeeks.org/problems/find-missing-and-repeating2512/1) : [Solution](missing_repeating.cpp)
 ### Solution-1: Playing with Indices:
@@ -44,3 +44,6 @@ so 2(x+y)= x+2y+z => x+2y+z = 2x+2y => x=z
 Hence by moving tortoise to start of linked list, and making both animals to move one node at a time, they both have same distance to cover .
 
 They will reach at the point where the loop starts in the linked list
+
+### Q-5) [Merge Intervals](https://leetcode.com/problems/merge-intervals/) : [Solution](merge_intervals.cpp)
+
