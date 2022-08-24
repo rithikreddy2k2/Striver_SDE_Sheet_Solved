@@ -3,12 +3,12 @@
 SNo | Name | Logic Used | Link |
 ----|------|------------|------|
 1 | [Sort Color](https://leetcode.com/problems/sort-colors/) (DNF (Dutch National Flag) Algo) | 3 pointer partitioning | [Solution](DNF_sort.cpp)
-2 | Finding Missing and Repeating | repeating xor {1 to n} | [Solution](missing_repeating.cpp)
+2 | Finding Missing and Repeating | repeating xor {1 to n} or Playing with Indices| [Solution](missing_repeating.cpp)
 3 | [Kadane's Algorithm](https://leetcode.com/problems/maximum-subarray/) : [EXPLANATION](https://leetcode.com/problems/maximum-subarray/discuss/1595195/C%2B%2BPython-7-Simple-Solutions-w-Explanation-or-Brute-Force-%2B-DP-%2B-Kadane-%2B-Divide-and-Conquer) | Max Subarray Sum | [Solution](kadanes_algorithm.cpp)
 4 | [Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | Cycle Detection Linked List {index -> element} | [Solution](duplicate_number.cpp)
 5 | Merge Intervals | sort, condition of merging | [Solution](merge_intervals.cpp)
 6 | Merge Sorted Space in O(1) Space | Gap Method: Shear Sort | [Solution](merge_sorted_arrays.cpp)
-
+### Q-2) [Find Missing and Repeating](https://practice.geeksforgeeks.org/problems/find-missing-and-repeating2512/1) : [Soltuion]
 ### Q-4)[Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) : [Solution](duplicate_number.cpp)
 #### LOGIC:
 If there is no duplicate in the array, we can map each indexes to each numbers in this array. In other words, we can have a mapping function f(index) = number
