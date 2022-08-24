@@ -5,18 +5,22 @@
 class Solution {
 public:
     vector<vector<int>> merge(vector<vector<int>>& intervals) {
-        vector<vector<int>> results;
-        // sort on the basis of the start value
-        sort(intervals.begin(), intervals.end());
+        int n=intervals.size();
         
-        for(auto &interval : intervals) {
-            // no common point: add the interval without merging
-            if(results.empty() || interval[0] > results.back()[1])
-                results.push_back(interval);
-            else 
-            // interval can be merged, update the ending value of the latest added interval
-                results.back()[1] = max(results.back()[1], interval[1]);
+        sort(begin(intervals),end(intervals));
+        
+        vector<vector<int>> ans;
+        
+        ans.push_back(intervals[0]);
+        
+        for(int i=1;i<n;i++){
+            if(intervals[i][0]<=ans.back()[1])
+                ans.back()[1] = max(ans.back()[1],intervals[i][1]);
+            
+            else
+                ans.push_back(intervals[i]);
         }
-        return results;
+        
+        return ans;
     }
 };
