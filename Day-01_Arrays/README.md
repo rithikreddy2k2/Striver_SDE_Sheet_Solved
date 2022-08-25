@@ -7,7 +7,7 @@ SNo | Name | Logic Used | Link |
 3 | [Kadane's Algorithm](https://leetcode.com/problems/maximum-subarray/) : [EXPLANATION](https://leetcode.com/problems/maximum-subarray/discuss/1595195/C%2B%2BPython-7-Simple-Solutions-w-Explanation-or-Brute-Force-%2B-DP-%2B-Kadane-%2B-Divide-and-Conquer) | Max Subarray Sum | [Solution](kadanes_algorithm.cpp)
 4 | [Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | Cycle Detection Linked List {index -> element} | [Solution](duplicate_number.cpp)
 5 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | sort, condition of merging | [Solution](merge_intervals.cpp)
-6 | Merge Sorted Space in O(1) Space | Gap Method: Shear Sort | [Solution](merge_sorted_arrays.cpp)
+6 | Merge Sorted Space in O(1) Space | Comparing I(n-1 -> 0) & J(0 -> n) & Sort Lastly| [Solution](merge_sorted_arrays.cpp)
 
 ### Q-1) [Sort Color](https://leetcode.com/problems/sort-colors/) : [Solution](DNF_sort.cpp)
 ### LOGIC:
