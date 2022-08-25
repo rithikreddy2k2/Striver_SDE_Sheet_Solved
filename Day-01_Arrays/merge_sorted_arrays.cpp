@@ -1,45 +1,28 @@
+//{ Driver Code Starts
 #include <bits/stdc++.h> 
 using namespace std; 
-
+// Question Link: https://practice.geeksforgeeks.org/problems/merge-two-sorted-arrays-1587115620/1
+// } Driver Code Ends
 class Solution{
     public:
-        int nextStep(int n) {
-            // stop the process when cycle of gap 1 is completed.
-            if(n <= 1)
-                return 0;
-             
-            return ceil(n / 2.0);
-        }
-    
         //Function to merge the arrays.
-        void merge(long long arr1[], long long arr2[], int n, int m) { 
-            int gap_step = nextStep(n + m);
+        void merge(long long arr1[], long long arr2[], int n, int m) 
+        { 
+            // code here 
+            int i=n-1,j=0;
             
-            while(gap_step > 0) {
-                int i, j;
-                // compare the elements in the first array
-                for(i = 0; i + gap_step < n; i++) {
-                    if(arr1[i] > arr1[i + gap_step])
-                        swap(arr1[i], arr1[i + gap_step]);
-                }
-                // compare the elements in both the arrays: cross arrays
-                j = gap_step > n ? gap_step - n : 0;
-                for(; i < n && j < m; i++, j++) {
-                    if(arr1[i] > arr2[j])
-                        swap(arr1[i], arr2[j]);
-                }
-                // compare the elements in the second array
-                if(j < m) {
-                    for(int j = 0; j + gap_step < m; j++) {
-                        if(arr2[j] > arr2[j + gap_step])
-                            swap(arr2[j], arr2[j + gap_step]);
-                    }
-                }
-                // get the gap step for next iteration
-                gap_step = nextStep(gap_step);
+            while(i>=0 and j<m){
+                if(arr1[i] > arr2[j])
+                    swap(arr1[i--],arr2[j++]);
+                else
+                    break;
             }
+            sort(arr1,arr1+n);
+            sort(arr2,arr2+m);
         } 
 };
+
+//{ Driver Code Starts.
 
 int main() 
 { 
@@ -75,3 +58,5 @@ int main()
 
 	return 0; 
 } 
+
+// } Driver Code Ends
