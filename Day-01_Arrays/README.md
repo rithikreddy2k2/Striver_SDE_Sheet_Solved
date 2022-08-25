@@ -7,7 +7,7 @@ SNo | Name | Logic Used | Link |
 3 | [Kadane's Algorithm](https://leetcode.com/problems/maximum-subarray/) : [EXPLANATION](https://leetcode.com/problems/maximum-subarray/discuss/1595195/C%2B%2BPython-7-Simple-Solutions-w-Explanation-or-Brute-Force-%2B-DP-%2B-Kadane-%2B-Divide-and-Conquer) | Max Subarray Sum | [Solution](kadanes_algorithm.cpp)
 4 | [Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | Cycle Detection Linked List {index -> element} | [Solution](duplicate_number.cpp)
 5 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | sort, condition of merging | [Solution](merge_intervals.cpp)
-6 | Merge Sorted Space in O(1) Space | Comparing I(n-1 -> 0) & J(0 -> n) & Sort Lastly| [Solution](merge_sorted_arrays.cpp)
+6 | [Merge Sorted Arrays](https://practice.geeksforgeeks.org/problems/merge-two-sorted-arrays-1587115620/1) in O(1) Space | 2-Pointer & Sort Lastly| [Solution](merge_sorted_arrays.cpp)
 
 ### Q-1) [Sort Color](https://leetcode.com/problems/sort-colors/) : [Solution](DNF_sort.cpp)
 ### LOGIC:
@@ -53,3 +53,7 @@ They will reach at the point where the loop starts in the linked list
 ### Q-5) [Merge Intervals](https://leetcode.com/problems/merge-intervals/) : [Solution](merge_intervals.cpp)
 ### LOGIC:
 Initially Sort the Intervals Array, so that Initially we can Push the Intervals Directly. Then if Curr_Interval[0] <= Ans.back()[1], Indicates the Range of Previous Interval can be Updated, Now it Depends on 2nd Value (i.e., Max (Ans.back()[1],Curr_Interval[1] is Taken), As current Interval Can be Completely Inside (Say Ans had [1,6], now Curr_Interval is [3,5], so as it lies inside it, hence Ans.back()[1] remains the Same, as it has Max value, So Range is still [1,6]) or Partially Inside (ay Ans had [1,6], now Curr_Interval is [5,8], so as it lies inside it, hence Ans.back()[1] would be updated with Curr_Interval[1], Hence Range would be updated to [1,8]), Else if Curr_Interval[0] > Ans.back()[1], then Curr_Interval has to be Pushed (Say [1,6] is ans.back(), and Curr_Interval is [7,9], then its Pushed back to the Ans) and Finally Return Ans.
+
+### Q-6) [Merge Sorted Arrays](https://practice.geeksforgeeks.org/problems/merge-two-sorted-arrays-1587115620/1) : [Solution](merge_sorted_arrays.cpp)
+### LOGIC:
+Initially Both Arrays are Sorted. Now 1st Array (size=n) should have smallest n elements, while 2nd Array (size=m) should have largest m elements, Hence Using 2-Pointer I(n-1) & J(0), if(Arr1[I] > Arr2[J]) then swap(Arr1[I--],Arr2[J++]), else Break (as at any Point, if Arr1 has element smaller than that of Arr2's element, then no element before this element in Arr1 can be greater than current Arr2's element as Arr1 is Sorted, So, previous ones would be Smaller.) Finally Sort Both Array's Individually, As we have Desired Elements in Desired Array, but they ain't sorted, Hence Sort them & return)
